@@ -1,0 +1,269 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% HyperLink Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+ }
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Muhammad Usman Akram}} \\
+\ \ +393667250140 \ \ \textbullet
+\ \ via Malpensada 90, \ Trento (38123),\ Italy
+\\
+\ \ \href{mailto:akram.muhammadusman@gmail.com}{akram.muhammadusman@gmail.com}
+\ \textbullet
+\ \ \href{http://usmanakram232.github.io/}{http://usmanakram232.github.io/}
+%\ \ \href{mailto:muhammadusman.akram@studenti.unitn.it}{muhammadusman.akram@studenti.unitn.it}
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{\href{http://db.disi.unitn.eu/}{dbTrento @ University of Trento}}}
+		{\textbf{Trento}}
+	\\
+	\headerrow
+		{\emph{\href{http://db.disi.unitn.eu/index.html#content=Muhammad\%20Usman\%20Akram}{Research Intern - Master's}}}
+		{\emph{2013 -- }}
+	\begin{itemize*}
+          	I am working on development of novel methods for analysis of time series. The focus of research is to build correlation aware distance metrics or re-ranking methods.
+	\end{itemize*}
+	
+	
+	\item
+	\headerrow
+		{\textbf{\href{http://www.lums.edu.pk}{Lahore University of Management Sciences (LUMS)}}}
+		{\textbf{Lahore}}
+	\\
+	\headerrow
+		{\emph{Research Assistant}}
+		{\emph{2010 -- 2011}}
+	\begin{itemize*}
+          	I worked as an Research Assistant at Lahore University of Management Sciences in Pervasive Computing. Here, I worked on development of CBR (Case-Based Reasoning engine) based resource recommendation system for pervasive environments.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{\href{http://www.elixir.com}{Elixir Technologies Pakistan (Pvt.) Ltd.}}}
+		{\textbf{Islamabad}}
+	\\
+	\headerrow
+		{\emph{Software Engineer}}
+		{\emph{2008 -- 2010}}
+	\begin{itemize*}
+		I  worked with the ETL (Extraction, Transformation \& Loading) layer of "Tango" platform called \href{http://tango.elixir.com/TangoSolutionsFramework/Data.html}{"Data Manager/Server"}. Data Manager is a very agile ETL solution using \CPP  and is not just limited to be part of Tango. While, working on development of Data Manager, I had chance to work with various databases, text formats and XML's, and to work on different aspects of data validations and text processing. We designed and made it usable on cloud and locally alike. It is a combination of fast back-end and innovative UI, using on-demand plugins to reduce memory foot print. It is available of all major platforms.
+	\end{itemize*}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{\href{http://www.unitn.it}{Università degli Studi di Trento (UniTN)} Erasmus Mundus}}
+		{\textbf{Trento}}
+	\\
+	\headerrow
+        {\emph{\href{http://disi.unitn.it/}{Dipartimento di Ingegneria e Scienza dell'Informazione}, Laurea magistrale in Informatica}}
+        {\emph{2011 - Waiting Defense}}
+	\begin{itemize*}
+		\item in Information Processing \& Data Management
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{\href{http://www.lums.edu.pk}{Lahore University of Management Sciences (LUMS)} Exchange}}
+		{\textbf{Lahore}}
+	\\
+	\headerrow
+        {\emph{\href{http://sse.lums.edu.pk}{School of Science \& Engineering}, M.S. Computer Science}}
+        {\emph{2010 - }}
+	\begin{itemize*}
+		\item in Operations Research \& Discrete Event Simulation
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{\href{http://www.pieas.edu.pk}{Pakistan Institute of Engineering \& Applied Sciences (PIEAS)}}}
+		{\textbf{Islamabad}}
+	\\
+	\headerrow
+		{\emph{Department of Computer \& Information Sciences (DCIS), B.S. Computer \& Information Sciences}}
+		{\emph{2004 -- 2008}}
+	\begin{itemize*}
+		\item in Computational Intelligence \& Operations Research
+		\item Final Year Project: Application of Fuzzy Classifier for ECG based Arrhythmia Recognition (one of nominee's for Best Project.)
+	\end{itemize*}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Publications}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item \href{http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?reload=true&isnumber=4777689&arnumber=4777725&count=113&index=29}{A Pruned Fuzzy k-Nearest Neighbor Classifier with Application to Electrocardiogram Based Cardiac Arrhythmia Recognition}, F.A. Afsar,\emph{ M.U. Akram}, M. Arif and J. Khurshid, Multitopic Conference, 2008. INMIC 2008. IEEE International.
+	\item \href{http://www.springerlink.com/content/w587r89h15691h20/?p=5a36883f07584ef8adbb2bbfb5761f6b&pi=0}{Arif Index for Predicting the Classification Accuracy of Features and Its Application in Heart Beat Classification Problem} , Muhammad Arif, Fayyaz A. Afsar, \emph{Muhammad Usman Akram} and Adnan Fida, 13th Pacific-Asia Conference, PAKDD 2009: Bangkok, Thailand (also published in Advances in Knowledge Discovery and Data Mining.)
+	\item \href{http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?isnumber=5368599&arnumber=5368654&count=148&index=15}{Arrhythmia Beat Classification using Pruned Fuzzy K-Nearest Neighbor Classifier}, M. Arif, \emph{M.U. Akram}, Fayyaz A. Afsar, Proceedings of International Conference on Soft Computing and Pattern Recognition, SoCPaR, 2009.
+	\item \href{http://www.scirp.org/Journal/PaperDownload.aspx?paperID=1606&fileName=JBiSE20100400008_94593058.pdf}{Pruned fuzzy K-nearest neighbor classifier for beat classification}, Muhammad Arif, \emph{Muhammad Usman Akram}, Fayyaz-ul-Afsar Amir Minhas, pp.380-389, DOI: 10.4236/jbise.2010.34053.
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Projects}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Cardiac Arrhythmia Recognition using LocalSVM}}
+		{\textbf{Machine Learning}}
+	\\
+	\headerrow
+		{\emph{Advisor: \href{http://disi.unitn.it/~passerini/}{Andrea Passerini}}}
+		{\emph{2012}}
+	\begin{itemize*}
+		This project mainly focus on machine learning techniques based on SVM and its combination with nearest neighbor classifiers, and affect of dataset imbalance and noise in input signal on classification.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Prediction of Binding Residue in Proteins}}
+		{\textbf{Biological Data Mining}}
+	\\
+	\headerrow
+		{\emph{Advisor: \href{http://disi.unitn.it/~blanzier/}{Prof. Enrico Blanzieri} \&
+            \href{http://disi.unitn.it/users/carmenmaria.livi}{Carmen Maria Livi}}}
+		{\emph{2011}}
+	\begin{itemize*}
+		Identifying binding residue in proteins using SVM based on features extracted from protein complexes.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Autonomic Resource Recommendation}}
+		{\textbf{Pervasive Computing}}
+	\\
+	\headerrow
+		{\emph{Advisor: Dr. Atif Alvi}}
+		{\emph{2011}}
+	\begin{itemize*}
+		Research is intended to fucus on resource recommendation in Pervasive Environments using Fuzzy or Rough Ontology and Case Based Reasoning.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{iPDC}}
+		{\textbf{Emerging Platforms(Smart-phone Application)}}
+	\\     %
+	\headerrow
+		{\emph{Advisor: \href{mailto:murad@tintash.com}{Ahmad Murad Akhtar}}}
+		{\emph{2010}}
+	\begin{itemize*}
+		iPDC serves smart-phone users in providing up-to-date menu from the Pepsi Dining Center (PDC) at LUMS. This application also provides information about restaurants in reach along with food, price range, and routing information, while enabling social media interaction.
+	\end{itemize*}
+
+	\item
+	\headerrow
+        {\textbf{ECG Based Cardiac Arrhythmia Recognition} (\small Application of Prototype Based Fuzzy Classifiers)}
+		{\textbf{Thesis ,PIEAS}}
+	\\
+	\headerrow
+        {\emph{Advisor: \href{http://syedmarif.webnode.com/}{Dr. Muhammad Arif} \&
+            \href{https://sites.google.com/site/fayyazafsar/home}{Fayyaz-ul-Amir Afsar Minhas}
+        }}
+        {\emph{2007 -- 2008}}
+	\begin{itemize*}
+        This work renders a set classifiers (fuzzy and/or nearest neighbor) with data pruning to reduce the number of stored prototypes to minimize memory and computational time requirements. The incorporation of fuzzy set theory into nearest neighbor classification makes the decision process more flexible and adaptable to noise in the data. We have also embodied an efficient approach for nearest neighbor search in our algorithm which results in significant reduction in computational time during training and classification. We give an application of the proposed classification methodology to electrocardiogram (ECG) based recognition of 9 types of arrhythmias using wavelet domain features.  The results obtained (~97\% accuracy), indicate the effectiveness of this algorithm.
+	\end{itemize*}
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	 Matlab, R, \CPP, C\#, Objective-C, Python, BPMN, SQL, Java, UML, shell scripting and \LaTeX.
+	\item[Career Interests:]
+	 Software Development, Data Analytics, \& Operations Research.
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Extra curricular Activities}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Clubs:] I have worked at ITeye, a now discontinued campus club to keep eye on IT advancement and organize related workshops for their introduction. I am also a founding member of Community for Open Source Promotion (at PIEAS) and active organizer of Lectures and workshops for promotion of open source technologies. I have also been member of PIEAS Literary Society and took part in organizing several inter \& intra university competitions.
+	\item[Hobbies:]
+     Photography, Traveling, Trekking and Reading.
+\end{description*}
+\end{indentsection}
+
+\end{document}
